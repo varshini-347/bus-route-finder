@@ -35,7 +35,8 @@ export default function FindRoute() {
 
       setRoutes(data.routes || []);
     } catch (err) {
-      setError(err.message);
+      console.error("Bus search error:", err);
+      setError(err.message || "Unable to connect to the server.");
     } finally {
       setLoading(false);
     }
