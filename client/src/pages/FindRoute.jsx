@@ -22,7 +22,7 @@ export default function FindRoute() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/bus/find?from=${encodeURIComponent(
+       `https://bus-route-finder-api.onrender.com/api/bus/find?from=${encodeURIComponent(
           from
         )}&to=${encodeURIComponent(to)}`
       );
