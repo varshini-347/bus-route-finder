@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: 'https://bus-route-finder-api.onrender.com/api',
   timeout: 10000,
 });
 
